@@ -29,4 +29,4 @@ script:
 - chmod 777 -R ./dist/
 - docker build --tag=angular_ssr .
 - docker tag angular_ssr 6633/angular-ssr:angular_ssr
-- bash docker_push.sh
+- bash ./scripts/docker_push.sh

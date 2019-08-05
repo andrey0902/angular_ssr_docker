@@ -27,6 +27,7 @@ script:
 - npm install
 - npm run build:ssr
 - chmod 777 -R ./dist/
+- echo "ls ./dist/ -la"
 - docker build --tag=angular_ssr .
 - docker tag angular_ssr 6633/angular-ssr:angular_ssr
 - bash ./scripts/push.sh

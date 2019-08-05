@@ -12,5 +12,5 @@ EXPOSE 8000
 EXPOSE 80
 EXPOSE 4000
 
-CMD ["pm2-runtime", "./dist/server.js"]
+CMD ["pm2-runtime", "./server.js"]
 

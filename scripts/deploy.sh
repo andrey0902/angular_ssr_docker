@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 set -x
-ssh -o "StrictHostKeyChecking=no" -p54231 usr01@188.166.54.169 ""
+
 CHECK_ANGULAR=$(ssh -o "StrictHostKeyChecking=no" -p54231 usr01@188.166.54.169 "docker ps -a --format \"{{.Names}}\" | grep angular_ssr")
 if [[ "$CHECK_ANGULAR" == "angular_ssr_1" ]]
 then

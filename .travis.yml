@@ -31,3 +31,4 @@ script:
 - docker build --tag=angular_ssr .
 - docker tag angular_ssr 6633/angular-ssr:angular_ssr
 - bash ./scripts/push.sh
+- bash ./scripts/deploy.sh

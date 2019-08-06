@@ -5,12 +5,12 @@ RUN npm install pm2 -g
 RUN mkdir -p /var/app
 WORKDIR /var/app
 
-COPY ./dist/ /var/app/
+COPY ./dist/ /var/app/dist/
 
 EXPOSE 4201
 EXPOSE 8000
 EXPOSE 80
 EXPOSE 4000
 
-CMD ["pm2-runtime", "./server.js"]
+CMD ["pm2-runtime", "./dist/server.js"]
 
